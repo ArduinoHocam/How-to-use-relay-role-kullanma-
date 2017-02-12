@@ -1,0 +1,26 @@
+int role = 6;
+int buton = 9;
+int butondurum ;
+
+
+void setup() {
+  pinMode(role, OUTPUT);
+  pinMode(buton, INPUT);
+
+ 
+}
+
+void loop() {
+  
+  butondurum = digitalRead(buton);
+if(butondurum==HIGH)
+{
+  digitalWrite(role,LOW);
+}
+if(butondurum==LOW)
+{
+  digitalWrite(role,HIGH);
+}
+
+
+}
